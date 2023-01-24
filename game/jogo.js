@@ -14,10 +14,12 @@ ajustaTamanhoPalcoJogo()
 
 function posicaoRandomica() {
 
+    //remover o mosquito anterior (caso exista)
+
     if(document.getElementById('mosquito')) {
         document.getElementById('mosquito').remove()
     }
-
+ 
     let posicaoX = Math.floor(Math.random() * largura) - 90
     let posicaoY = Math.floor(Math.random() * altura) - 90
 
